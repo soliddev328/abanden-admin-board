@@ -3,3 +3,8 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+.cache/
+
+### Node ###
+node_modules/
