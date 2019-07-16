@@ -1,5 +1,6 @@
 .hello {
-  font-size: 3rem;
+  font-size: 3vw;
+  transition: .1s;
   font-weight: 600;
   margin-top: 22%;
   margin-bottom: -5px;
@@ -9,15 +10,14 @@
 .info {
   font-size: 1.8rem;
   font-weight: 300;
-  width: 65rem;
+  width: 50%;
   margin-left: 8%;
 }
 
-.me {
-  position: absolute;
-  width: 65%;
-  margin-left: 42%;
-  bottom: -120px;
+.surroundingDiv {
+  text-align: center;
+  float: right;
+  z-index: 1;
 }
 
 .sideBar {
@@ -27,4 +27,42 @@
   width: 5px;
   height: 730px;
   background-color: white;
+}
+
+.me {
+  transition: 0.5s;
+  width: 110%;
+  margin-top: -40%;
+  margin-left: 25%;
+}
+
+@media only screen and (min-width: 500px) {
+  .me {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hello {
+    font-size: 3vw;
+    padding-top: 60px;
+    padding-left: 15px;
+  }
+
+  .info {
+    padding-left: 15px;
+  }
+
+  .sideBar {
+    margin-top: -25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .me {
+    transition: 0.5s;
+    width: 73%;
+    margin-left: 40%;
+    margin-top: -43%;
+  }
 }
