@@ -4,21 +4,22 @@ import './menu.css'
 
 class NavigationMenu extends Component {
   render() {
-    var visibility = "hide";
+    let visibility = "hide";
 
     if (this.props.menuVisibility) {
       visibility = "show";
     }
 
     return (
-      <div id="flyoutMenu" onMouseDown={this.props.handleMouseDown} className={visibility}>
-        <nav>
+      <div id="flyoutMenu" className={visibility}>
+        <button onMouseDown={this.props.handleMouseDown}>x</button>
+        <div className="box">
           <ul>
-            <li><Link to="/projects">PROJECTS</Link></li>
+            <li><Link to="/projects">HOME</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
-            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/projects">PROJECTS</Link></li>
           </ul>
-        </nav>
+        </div>
       </div>
     );
   }

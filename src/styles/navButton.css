@@ -1,0 +1,15 @@
+button {
+  top: -0.8rem;
+  float: right;
+  right: 4rem;
+  position: relative;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline:none;
+  color: blue;
+  font-size: 75px;
+  font-weight: 300;
+}

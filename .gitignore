@@ -10,4 +10,10 @@
 node_modules/
 
 ### Build ###
-public
+public/
+
+### Node config ###
+.npmrc
+
+### Ideas ###
+words/

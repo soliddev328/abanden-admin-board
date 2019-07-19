@@ -26,7 +26,6 @@ class Header extends Component {
     this.toggleMenu();
 
     console.log("clicked");
-    e.stopPropagation();
   }
 
   toggleMenu() {
