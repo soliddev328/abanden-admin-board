@@ -24,16 +24,6 @@ class Header extends Component {
 
   handleMouseDown(e) {
     this.toggleMenu();
-
-    console.log("clicked");
-  }
-
-  toggleMenu() {
-    this.setState(
-      {
-        visible: !this.state.visible
-      }
-    );
   }
 
   render() {
@@ -43,13 +33,6 @@ class Header extends Component {
       <NavigationMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
       <header>
         <h1 className={headerStyles.logo}><Link className={headerStyles.logoLink}to="/">M</Link></h1>
-        {/*<nav>
-          <ul className={headerStyles.navigationBar}>
-            <li className={headerStyles.navigationBarLinks}><Link className={headerStyles.link} to="/projects">PROJECTS</Link></li>
-            <li className={headerStyles.navigationBarLinks}><Link className={headerStyles.link} to="/about">ABOUT</Link></li>
-            <li className={headerStyles.navigationBarLinks}><Link className={headerStyles.link} to="/">HOME</Link></li>
-          </ul>
-        </nav>*/}
       </header>
       <div id="theMenu"></div>
     </div>

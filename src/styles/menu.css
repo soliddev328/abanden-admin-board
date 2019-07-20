@@ -1,7 +1,8 @@
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(31, 31, 31, 0.98);
+  /* background-color: rgb(31, 31, 31, 0.98); */
+  background-color: rgb(255,255,255,0.98);
   position: fixed;
   top: 0;
   left: 0;
@@ -45,13 +46,13 @@ li {
 
 li a {
   text-decoration: none;
-  color: white;
-  font-weight: 300;
+  color: #1F1F1F;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
 a {
-  color: #fff;
+  color: #1F1F1F;
   display: inline-block;
   position: relative;
 }
@@ -61,10 +62,10 @@ a:after {
   bottom: 0;
   content: "";
   display: block;
-  height: 3px;
+  height: 5px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #1F1F1F;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -74,8 +75,9 @@ a:hover:after {
   left: 0;
 }
 
-button {
-  top: -0.8rem;
+.closeNav {
+  margin-top: 4.3rem;
+  margin-right: 2rem;
   float: right;
   right: 4rem;
   position: relative;
@@ -85,7 +87,7 @@ button {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: white;
-  font-size: 100px;
+  color: #1F1F1F;
+  font-size: 70px;
   font-weight: 300;
 }

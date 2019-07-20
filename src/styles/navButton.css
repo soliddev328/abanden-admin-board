@@ -1,5 +1,5 @@
 button {
-  top: -0.8rem;
+  top: -1.2rem;
   float: right;
   right: 4rem;
   position: relative;
@@ -9,7 +9,7 @@ button {
   cursor: pointer;
   overflow: hidden;
   outline:none;
-  color: blue;
+  color: white;
   font-size: 75px;
-  font-weight: 300;
+  font-weight: 200;
 }

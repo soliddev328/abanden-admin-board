@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'gatsby'
-import './menu.css'
+import '../styles/menu.css'
 
 class NavigationMenu extends Component {
   render() {
@@ -12,10 +12,10 @@ class NavigationMenu extends Component {
 
     return (
       <div id="flyoutMenu" className={visibility}>
-        <button onMouseDown={this.props.handleMouseDown}>x</button>
+        <button className="closeNav" onMouseDown={this.props.handleMouseDown}>-</button>
         <div className="box">
           <ul>
-            <li><Link to="/projects">HOME</Link></li>
+            <li><Link to="/">HOME</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
             <li><Link to="/projects">PROJECTS</Link></li>
           </ul>
