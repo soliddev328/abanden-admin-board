@@ -18,6 +18,7 @@ class NavigationMenu extends Component {
             <li><Link to="/">HOME</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
             <li><Link to="/projects">PROJECTS</Link></li>
+            <li><Link to="/projects">BLOG</Link></li>
           </ul>
         </div>
       </div>

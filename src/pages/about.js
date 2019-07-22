@@ -8,10 +8,10 @@ const About = () => {
     <div>
       <Layout>
         <div className="left">
-          <img src={armsImage} className="arms"></img>
+          <img src={armsImage} className="arms" alt="pic"></img>
         </div>
         <div className="right">
-          <b>Hi again,</b> Morgan here. 💭 Thanks for checking out my website! I created it using React, Gatsby, Netlify,
+          <b>Hi again,</b> Morgan here.&nbsp;&nbsp;💭 Thanks for checking out my website! I created it using React, Gatsby, Netlify,
           and Contentful. You can checkout the repository here.
           <br></br><br></br>
           So, who am I? I'm a 20 year old software engineering student with dreams of heading a start-up.
@@ -40,7 +40,7 @@ const About = () => {
           I would someday like to inspire a lot of people to pursue careers in technology. Technology
           is the future, and it is very powerful. And as you know, with great power comes great responsibility.
           <br></br><br></br>
-          Let's make the world a better place with technology.&nbsp;&nbsp;🧠
+          <b>Let's make the world a better place with technology.</b>&nbsp;&nbsp;🧠
         </div>
       </Layout>
     </div>
