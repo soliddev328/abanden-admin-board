@@ -1,6 +1,6 @@
 .hello {
   font-size: 3vw;
-  transition: .1s;
+  /* transition: .1s; */
   font-weight: 600;
   margin-top: 22%;
   margin-bottom: -5px;
@@ -23,46 +23,101 @@
 .sideBar {
   position: absolute;
   margin-left: 4rem;
-  margin-top: -20%;
+  margin-top: -25%;
   width: 5px;
-  height: 700px;
+  height: 500px;
   background-color: white;
 }
 
 .me {
-  transition: 0.5s;
-  width: 110%;
-  margin-top: -40%;
-  margin-left: 25%;
+  /* transition: 0.5s; */
+  width: 70%;
+  margin-left: 40%;
+  margin-top: -50%;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 600px) {
   .me {
-    width: 90%;
+    width: 80%;
+    margin-right: -90px;
+    margin-top: -90px;
   }
-}
 
-@media only screen and (min-width: 768px) {
   .hello {
-    font-size: 3vw;
-    padding-top: 60px;
-    padding-left: 15px;
+    font-size: 20px;
+    padding-left: 40px;
   }
 
   .info {
-    padding-left: 15px;
+    font-size: 16px;
+    padding-left: 40px;
   }
 
   .sideBar {
-    margin-top: -25%;
+    width: 3px;
+    margin-left: 50px;
+    margin-top: -33%;
+    height: 400px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (max-width: 800px) and (min-width: 600px) {
+    .me {
+        margin-top: -220px;
+      }
+
+      .info {
+        font-size: 20px;
+        padding-left: 40px;
+      }
+
+      .hello {
+        font-size: 22px;
+        padding-left: 40px;
+      }
+
+      .sideBar {
+        width: 3px;
+        margin-top: -35%;
+      }
+  }
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  .hello {
+    padding-left: 40px;
+  }
+
+  .info {
+    padding-left: 40px;
+    font-size: 20px;
+  }
+
+  .sideBar {
+    width: 3px;
+    margin-top: -20%;
+  }
+
   .me {
-    transition: 0.5s;
-    width: 73%;
-    margin-left: 40%;
-    margin-top: -50%;
+    margin-top: -220px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .info {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .hello {
+    font-size: 23px;
+    padding-left: 10px;
+  }
+
+  .me {
+    margin-top: -390px;
+  }
+
+  .sideBar {
+    margin-top: -20%;
   }
 }

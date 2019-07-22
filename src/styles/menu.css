@@ -1,7 +1,6 @@
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
-  /* background-color: rgb(31, 31, 31, 0.98); */
   background-color: rgb(255,255,255,0.98);
   position: fixed;
   top: 0;
@@ -13,7 +12,6 @@
 }
 
 #flyoutMenu.hide {
-  /* visibility: hidden; */
   transform: translate3d(-100vw, 0, 0);
 }
 
@@ -36,11 +34,11 @@
 
 ul {
   list-style-type: none;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 li {
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: 1rem;
 }
 
