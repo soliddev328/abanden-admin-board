@@ -17,3 +17,6 @@ public/
 
 ### Ideas ###
 words/
+
+### Environment Variables ###
+.env
