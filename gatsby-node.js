@@ -1,14 +1,10 @@
-const path = require('path')
+const path = require('path');
+const slash = require(`slash`);
 
-exports.createPages = ({
-  graphql,
-  actions
-}) => {
-  const {
-    createPage
-  } = actions
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
 
-  const blogPost = path.resolve('./src/templates/blog-post-contentful.js')
+  const blogPost = path.resolve('./src/templates/blogpost.js')
   return graphql(
     `
       {
@@ -16,7 +12,7 @@ exports.createPages = ({
           edges {
             node {
               slug
-              name
+              welcomeToMyBlog
             }
           }
         }
@@ -24,25 +20,24 @@ exports.createPages = ({
     `
   ).then(result => {
     if (result.errors) {
-      throw result.errors
+      console.log('Error retrieving contenful data: ', result.errors);
     }
 
     // Create blog posts createPages
-    const posts = result.data.allContentfulPost.edges
+    const blogPostTemplate = path.resolve("./src/templates/blogpost.js");
 
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = indes === 0 ? null : posts[index - 1].node
-
-      createPage({
-        path: post.node.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.slug,
-          previous,
-          next,
-        },
-      })
+    result.data.allContentfulBlogPost.edges.forEach(edge => {
+        createPage({
+          path: `/blogpost/${edge.node.slug}/`,
+          component: slash(blogPostTemplate),
+          context: {
+	    slug: edge.node.slug,
+            id: edge.node.id
+          }
+        });
+      });
     })
-  })
-}
+    .catch(error => {
+      console.log("Error retrieving contentful data", error);
+    });
+};

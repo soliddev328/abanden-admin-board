@@ -4,7 +4,6 @@ import '../styles/index.css'
 import landingStyles from '../styles/landing.module.css'
 import portrait from '../images/me.png'
 
-
 const IndexPage = () => {
   return (
     <div>
