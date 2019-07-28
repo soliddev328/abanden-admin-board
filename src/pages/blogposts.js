@@ -1,18 +1,18 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-
-import Layout from "../components/layout";
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import '../styles/blogpost.css'
+import Layout from '../components/layout'
 
 
 const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
   return (
     <Layout>
-            <h1>{"Here's a list of all blogposts!"}</h1>
-      <div className="blogposts">
+      <div className='blogposts'>
         {blogPosts.map(({ node: post }) => (
           <div key={post.id}>
-            <Link to={`/blogpost/${post.slug}`}>{post.welcomeToMyBlog}</Link>
+            <Link  className="blogpost-link" to={`/blogpost/${post.slug}`}>{post.welcomeToMyBlog}</Link>
+            <div className="about-blog">{post.subtitle}</div>
           </div>
         ))}
         <span className="mgBtm__24" />
@@ -30,8 +30,10 @@ export const query = graphql`
       edges {
         node {
           id
+          subtitle
           welcomeToMyBlog
           slug
+          time
           image {
             file {
               url

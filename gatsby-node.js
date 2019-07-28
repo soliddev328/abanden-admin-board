@@ -31,8 +31,8 @@ exports.createPages = ({ graphql, actions }) => {
           path: `/blogpost/${edge.node.slug}/`,
           component: slash(blogPostTemplate),
           context: {
-	    slug: edge.node.slug,
-            id: edge.node.id
+	           slug: edge.node.slug,
+             id: edge.node.id
           }
         });
       });

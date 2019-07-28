@@ -15,10 +15,10 @@ class NavigationMenu extends Component {
         <button className="closeNav" onMouseDown={this.props.handleMouseDown}>-</button>
         <div className="box">
           <ul>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/about">ABOUT</Link></li>
-            <li><Link to="/projects">PROJECTS</Link></li>
-            <li><Link to="/blogposts">BLOG</Link></li>
+            <li className="nav-link"><Link className="nav-link" to="/">HOME</Link></li>
+            <li className="nav-link"><Link className="nav-link" to="/about">ABOUT</Link></li>
+            <li className="nav-link"><Link className="nav-link" to="/projects">PROJECTS</Link></li>
+            <li className="nav-link"><Link className="nav-link" to="/blogposts">BLOG</Link></li>
           </ul>
         </div>
       </div>
