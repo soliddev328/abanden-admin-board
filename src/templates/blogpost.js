@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
+import '../styles/blogpost-template.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.contentfulBlogPost
-    const siteTitle = this.props.data.site.siteMetadata.welcomeToMyBlog
-    const { previous, next } = this.props.pageContext
 
     return (
       <Layout>
-        <h1></h1>
+        <div className="container">
+          <h1 className="title">{post.welcomeToMyBlog}</h1>
+          <h3 className="subtitle">{post.subtitle}</h3>
+          <img alt="blogpost-visual" src={post.image.file.url}/>
+          <div className="content" dangerouslySetInnerHTML={{ __html: post.content.childContentfulRichText.html }}/>
+          <h5 className="author">Author: Morgan Richardson</h5>
+          <Link className="back" to="/blogposts">Back</Link>
+        </div>
       </Layout>
     )
   }
@@ -29,6 +35,11 @@ export const pageQuery = graphql`
     contentfulBlogPost( slug: { eq: $slug }) {
       welcomeToMyBlog
       subtitle
+      image {
+        file {
+          url
+        }
+      }
       content {
         childContentfulRichText {
           html
