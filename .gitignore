@@ -8,3 +8,12 @@
 
 ### Node ###
 node_modules/
+
+### Node config ###
+.npmrc
+
+### Ideas ###
+words/
+
+### Environment Variables ###
+.env
