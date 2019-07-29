@@ -9,9 +9,6 @@
 ### Node ###
 node_modules/
 
-### Build ###
-public/
-
 ### Node config ###
 .npmrc
 
