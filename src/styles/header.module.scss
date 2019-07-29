@@ -1,0 +1,51 @@
+.link {
+  color: white;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.link:hover {
+  transition: .2s;
+  font-weight: 500;
+}
+
+.logo {
+  margin-top: 3.5rem;
+  margin-left: 3.5rem;
+}
+
+.logoLink {
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.navigationBar {
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top: -5.2rem;
+}
+
+.navigationBarLinks {
+  display: block;
+  float: right;
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+.navigationBarLinks a {
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+#theMenu {
+  position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate3d(-100vw, 0, 0);
+
+    width: 100vw;
+    height: 100vh;
+}

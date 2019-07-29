@@ -7,6 +7,9 @@ This portfolio is a work in progress. My current portfolio is hosted [here](http
 ##### Home
 ![Home screenshot](mockups/Landing.png)
 
+##### Navbar
+![Home screenshot](mockups/Navbar.png)
+
 ##### About
 ![Home screenshot](mockups/About.png)
 
