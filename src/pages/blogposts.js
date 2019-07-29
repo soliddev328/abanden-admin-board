@@ -8,6 +8,8 @@ const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
   return (
     <Layout>
+      <h1 class="header">The Blog</h1>
+      <div className="line"></div>
       <div className='blogposts'>
         {blogPosts.map(({ node: post }) => (
           <div key={post.id}>
@@ -16,8 +18,8 @@ const BlogPosts = ({ data }) => {
           </div>
         ))}
         <span className="mgBtm__24" />
-        <Link to="/">Go back to the homepage</Link>
       </div>
+      <div className="line"></div>
     </Layout>
   );
 };
