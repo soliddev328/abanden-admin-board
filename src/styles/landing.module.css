@@ -121,3 +121,27 @@
     margin-top: -20%;
   }
 }
+
+@media (max-width: 500px) {
+  .sideBar {
+    margin-top: -34%;
+    margin-left: 20px;
+  }
+
+  .info {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .hello {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .me {
+    margin-top: -19%;
+    margin-left: 0px;
+    width: 110%;
+  }
+}

@@ -37,3 +37,21 @@
   margin-bottom: 3rem;
   font-size: 16px;
 }
+
+@media (max-width: 500px) {
+  .blogposts, .line, .header {
+    margin-left: 20px;
+  }
+
+  .blogposts {
+    margin-right: 60px;
+  }
+
+  .blogpost-link {
+    font-size: 14px;
+  }
+
+  .about-blog {
+    font-size: 12px;
+  }
+}

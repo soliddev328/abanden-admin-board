@@ -13,3 +13,9 @@ button {
   font-size: 75px;
   font-weight: 200;
 }
+
+@media (max-width: 500px) {
+  button {
+    margin-right: -40px;
+  }
+}
