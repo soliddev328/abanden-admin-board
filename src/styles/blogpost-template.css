@@ -37,3 +37,29 @@ img {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+@media (max-width: 500px) {
+  .container {
+    margin-left: 10%!important;
+    margin-right: 10%;
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 10px;
+  }
+
+  .author {
+    margin-top: 40px;
+    font-size: 10px;
+  }
+}

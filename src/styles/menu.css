@@ -1,7 +1,7 @@
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(255,255,255,0.98);
+  background-color: rgb(255, 255, 255, 0.98);
   position: fixed;
   top: 0;
   left: 0;
@@ -35,6 +35,12 @@
 ul {
   list-style-type: none;
   margin-top: 5rem;
+}
+
+@media (max-width: 500px) {
+  ul {
+    margin-left: -225px;
+  }
 }
 
 li {
@@ -88,4 +94,12 @@ a:hover:after {
   color: #1F1F1F;
   font-size: 70px;
   font-weight: 300;
+}
+
+@media (max-width: 500px) {
+  .closeNav {
+    margin-top: 3rem!important;
+    margin-right: 0.2rem!important;
+    cursor: pointer;
+  }
 }
