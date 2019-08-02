@@ -34,13 +34,7 @@
 
 ul {
   list-style-type: none;
-  margin-top: 5rem;
-}
-
-@media (max-width: 500px) {
-  ul {
-    margin-left: -225px;
-  }
+  margin-top: 4rem;
 }
 
 li {
@@ -104,6 +98,7 @@ a:hover:after {
   }
 
   ul {
+    margin-top: 3.3rem;
     margin-left: -170px;
   }
 }

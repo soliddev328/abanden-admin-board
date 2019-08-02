@@ -19,6 +19,7 @@ class NavigationMenu extends Component {
             <li className="nav-link"><Link className="nav-link" to="/about">ABOUT</Link></li>
             <li className="nav-link"><Link className="nav-link" to="/projects">PROJECTS</Link></li>
             <li className="nav-link"><Link className="nav-link" to="/blogposts">BLOG</Link></li>
+            <li className="nav-link"><Link className="nav-link" to="/contact">CONTACT</Link></li>
           </ul>
         </div>
       </div>
