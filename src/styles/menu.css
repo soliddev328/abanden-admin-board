@@ -102,4 +102,8 @@ a:hover:after {
     margin-right: 0.2rem!important;
     cursor: pointer;
   }
+
+  ul {
+    margin-left: -170px;
+  }
 }
