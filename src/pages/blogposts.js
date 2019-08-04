@@ -8,7 +8,7 @@ const BlogPosts = ({ data }) => {
   const blogPosts = data.allContentfulBlogPost.edges;
   return (
     <Layout>
-      <h1 class="header">The Blog</h1>
+      <h1 className="header">The Blog</h1>
       <div className="line"></div>
       <div className='blogposts'>
         {blogPosts.map(({ node: post }) => (

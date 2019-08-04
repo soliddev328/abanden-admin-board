@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import reachOut from '../images/reach-out.png'
 import '../styles/contact.css'
 
 const Contact = () => {
@@ -7,7 +8,15 @@ const Contact = () => {
     <div>
       <Layout>
         <div className="container">
-          <h3></h3>
+          <div className="left">
+            <img src= { reachOut } className="arms" alt="pic"></img>
+          </div>
+          <div className="right">
+            <p className="contact-link"><a href="https://www.github.com/morganrmarie" target="_blank" rel="noopener noreferrer">email</a></p>
+            <p className="contact-link"><a href="https://www.github.com/morganrmarie" target="_blank" rel="noopener noreferrer">github</a></p>
+            <p className="contact-link"><a href="https://www.linkedin.com/in/morganrmarie" target="_blank" rel="noopener noreferrer">linkedin</a></p>
+            <p className="contact-link"><a href="https://www.instagram.com/morgan.codes" target="_blank" rel="noopener noreferrer">instagram</a></p>
+          </div>
         </div>
       </Layout>
     </div>
