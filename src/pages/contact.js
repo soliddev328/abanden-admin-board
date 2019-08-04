@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="left">
             <img src= { reachOut } className="arms" alt="pic"></img>
           </div>
-          <div className="right">
+          <div className="contact-right">
             <p className="contact-link"><a className="a-contact-link" href="mailto:morganrmarie@gmail.com?subject=morgan.codes inquiry">email</a></p>
             <p className="contact-link"><a className="a-contact-link" href="https://www.github.com/morganrmarie" target="_blank" rel="noopener noreferrer">github</a></p>
             <p className="contact-link"><a className="a-contact-link" href="https://www.linkedin.com/in/morganrmarie" target="_blank" rel="noopener noreferrer">linkedin</a></p>
