@@ -28,7 +28,7 @@ class Header extends Component {
 
   render() {
   return (
-    <div>
+    <div className="navigation-bar-container">
       <NavigationButton handleMouseDown={this.handleMouseDown} />
       <NavigationMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
       <header>
