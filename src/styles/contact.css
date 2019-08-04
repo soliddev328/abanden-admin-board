@@ -8,6 +8,7 @@
   text-align: center;
   vertical-align: middle;
   height: 25vw;
+
 }
 
 .contact-link {
@@ -17,11 +18,11 @@
   font-size: 20px;
 }
 
-a {
+.a-contact-link {
   text-decoration: none;
 }
 
-a:hover {
+.a-contact-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
