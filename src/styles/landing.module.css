@@ -44,13 +44,15 @@
 .contactInfo {
   text-align: center;
   font-weight: 300;
+  margin-bottom: 50px;
 }
 
 .socialIcons {
   padding: 10px;
   font-size: 30px;
   margin-top: -50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
