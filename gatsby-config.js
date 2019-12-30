@@ -6,9 +6,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-      title: 'MORGAN.CODES BLOG',
+      title: 'Morgan Richardson - Software Developer',
       author: 'Morgan Richardson',
-      description: 'Thoughts of Morgan'
+      description: 'Morgan Richardson is a software developer based in Chicago, specializing in modern JavaScript and full-stack development. Morgan has been sharing her journey as a woman in technology on Instagram (@morgan.codes) since she began her journey.'
   },
   plugins: [
     'gatsby-plugin-sass',
