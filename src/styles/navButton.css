@@ -1,21 +1,13 @@
 button {
-  top: -1.2rem;
-  float: right;
-  right: 4rem;
-  position: relative;
+  right: 5%;
+  top: 5%;
+  position: absolute;
   background-color: Transparent;
   background-repeat:no-repeat;
+  outline: none;
   border: none;
   cursor: pointer;
-  overflow: hidden;
-  outline:none;
-  color: white;
+  color: #1F1F1F;
   font-size: 75px;
-  font-weight: 200;
-}
-
-@media (max-width: 500px) {
-  button {
-    margin-right: -40px;
-  }
+  font-weight: 600;
 }

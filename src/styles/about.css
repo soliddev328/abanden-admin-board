@@ -1,50 +1,88 @@
-.left {
-  margin-top: 3rem;
-  margin-left: -2rem;
-  float: left;
-  height: 100%;
-  overflow: hidden;
-  width: 45%;
-}
-
-.arms {
-  width: 110%;
-}
-
-.right {
-  padding-top: 15rem;
-  padding-bottom: 20rem;
-  margin-right: 150px;
-  text-align: left;
-  float: right;
-  height: 100%;
-  width: 40%;
-  font-size: 16px;
-  border-left: 5px solid white;
-  padding-left: 70px;
-  margin-bottom: 100px;
-}
-
-.instagram-link-href {
+.about-link {
   text-decoration: none;
 }
 
-.pink-link {
-  text-decoration: underline;
-  text-decoration-color: #ffc0cb;
+.about-container {
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 20%;
+  margin-bottom: 200px;
 }
 
-@media only screen and (max-width: 1300px) {
-  .left {
-    display: none;
+.inner-about-container {
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.inner-about-header {
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+.inner-about-description {
+  width: 65%;
+}
+
+.inner-about-contact {
+  padding-right: 15px;
+  font-size: 20px;
+  color: #1F1F1F;
+}
+
+.morgan-headshot {
+  position: absolute;
+  top: 20px;
+  right: 5.5%;
+  width: 280px;
+}
+
+.course-link {
+  text-decoration: none;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+}
+
+.skills-column {
+  width: 25%;
+}
+
+.skills-column li {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    margin-bottom: 30px;
   }
 
-  .right {
-    width: 80%;
-    font-size: 12px;
-    margin-right: 40px;
-    border: none;
-    margin-bottom: 50px;
-    padding-top: 10px;
+  .inner-about-header {
+    font-size: 18px;
+  }
+
+  .inner-about-description {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .skills-container {
+    margin-top: 10px;
+  }
+
+  .skills-column li {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .morgan-headshot {
+    display: none;
   }
 }

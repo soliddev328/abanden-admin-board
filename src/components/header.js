@@ -29,11 +29,9 @@ class Header extends Component {
   render() {
   return (
     <div className="navigation-bar-container">
+      <NavigationMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
+      <Link className={headerStyles.logoLink}to="/">M</Link>
       <NavigationButton handleMouseDown={this.handleMouseDown} />
-      <NavigationMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
-      <header>
-        <h1 className={headerStyles.logo}><Link className={headerStyles.logoLink}to="/">M</Link></h1>
-      </header>
       <div id="theMenu"></div>
     </div>
   );
