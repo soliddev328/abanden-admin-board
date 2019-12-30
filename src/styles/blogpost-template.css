@@ -8,6 +8,7 @@
 .blogpost-title {
   text-transform: uppercase;
   font-size: 40px;
+  color: #1f1f1f;
 }
 
 .blogpost-subtitle {
@@ -15,10 +16,11 @@
   font-weight: 300;
   text-transform: uppercase;
   margin-top: -20px;
+  color: #1f1f1f;
 }
 
 a {
-  color: white;
+  color: #1f1f1f;
 }
 
 img {

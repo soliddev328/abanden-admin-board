@@ -4,19 +4,18 @@
 }
 
 .hello {
-  font-size: 3vw;
-  /* transition: .1s; */
+  font-size: 2.5vw;
   font-weight: 600;
-  margin-top: 22%;
+  margin-top: 25%;
   margin-bottom: -5px;
-  margin-left: 8%;
+  margin-left: 10%;
 }
 
 .info {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  width: 50%;
-  margin-left: 8%;
+  width: 45%;
+  margin-left: 10%;
 }
 
 .surroundingDiv {
@@ -25,20 +24,10 @@
   z-index: 1;
 }
 
-.sideBar {
-  position: absolute;
-  margin-left: 4rem;
-  margin-top: -25%;
-  width: 5px;
-  height: 500px;
-  background-color: white;
-}
-
 .me {
-  /* transition: 0.5s; */
   width: 70%;
-  margin-left: 40%;
-  margin-top: -50%;
+  margin-left: 35%;
+  margin-top: -40%;
 }
 
 .contactInfo {
@@ -51,60 +40,44 @@
   padding: 10px;
   font-size: 30px;
   margin-top: -50px;
-  /* margin-bottom: 50px; */
-  color: white;
+  margin-bottom: 0px;
+  color: #1F1F1F;
 }
 
-@media only screen and (max-width: 600px) {
-  .me {
-    width: 80%;
-    margin-right: -90px;
-    margin-top: -90px;
-  }
+.joinSlack {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 70px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-  .hello {
-    font-size: 20px;
-    padding-left: 40px;
+.joinSlackLink {
+  text-decoration: none; 
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+  .me {
+    margin-top: -30%;
+    margin-left: 0;
+    width: 130%;
   }
 
   .info {
-    font-size: 16px;
-    padding-left: 40px;
+    font-size: 22px;
+    width: 70%;
+  }
+
+  .hello {
+    font-size: 26px;
   }
 
   .sideBar {
     width: 3px;
-    margin-left: 50px;
-    margin-top: -33%;
-    height: 400px;
-  }
-
-  .socialIcons {
-    font-size: 16px;
-    padding-top: 30px;
+    margin-top: -35%;
   }
 }
-
-@media (max-width: 800px) and (min-width: 600px) {
-    .me {
-        margin-top: -220px;
-      }
-
-      .info {
-        font-size: 20px;
-        padding-left: 40px;
-      }
-
-      .hello {
-        font-size: 22px;
-        padding-left: 40px;
-      }
-
-      .sideBar {
-        width: 3px;
-        margin-top: -35%;
-      }
-  }
 
 @media (max-width: 1000px) and (min-width: 800px) {
   .hello {
@@ -114,11 +87,6 @@
   .info {
     padding-left: 40px;
     font-size: 20px;
-  }
-
-  .sideBar {
-    width: 3px;
-    margin-top: -20%;
   }
 
   .me {
@@ -140,32 +108,23 @@
   .me {
     margin-top: -390px;
   }
-
-  .sideBar {
-    margin-top: -20%;
-  }
 }
 
-@media (max-width: 500px) {
-  .sideBar {
-    margin-top: -34%;
-    margin-left: 20px;
-  }
-
+@media (max-width: 600px) {
   .info {
-    font-size: 10px;
-    margin-left: 10px;
+    font-size: 14px;
+    width: 70%;
   }
 
   .hello {
-    font-size: 12px;
-    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 50%;
     margin-bottom: 5px;
   }
 
   .me {
-    margin-top: -19%;
-    margin-left: 0px;
-    width: 110%;
+    margin-top: -35%;
+    margin-left: -50px;
+    width: 150%;
   }
 }
