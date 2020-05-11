@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .left {
@@ -10,6 +10,10 @@
   height: 100%;
   overflow: hidden;
   width: 45%;
+}
+
+.arms {
+  width: 100%;
 }
 
 .contact-right {
