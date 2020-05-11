@@ -1,88 +1,71 @@
 .about-link {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .about-container {
-  margin: 0 auto;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 20%;
-  margin-bottom: 200px;
+	margin: 150px 100px 0px 150px;
+	height: 800px;
 }
 
 .inner-about-container {
-  line-height: 1.6;
-  margin-bottom: 50px;
+	line-height: 1.6;
+	margin-bottom: 50px;
 }
 
 .inner-about-header {
-  font-size: 34px;
-  margin-bottom: 0;
+	font-size: 34px;
+	margin-bottom: 0;
 }
 
 .inner-about-description {
-  width: 65%;
+	width: 65%;
 }
 
 .inner-about-contact {
-  padding-right: 15px;
-  font-size: 20px;
-  color: #1F1F1F;
-}
-
-.morgan-headshot {
-  position: absolute;
-  top: 20px;
-  right: 5.5%;
-  width: 280px;
+	padding-right: 15px;
+	font-size: 20px;
+	color: #1f1f1f;
 }
 
 .course-link {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .skills-container {
-  display: flex;
-  flex-direction: row;
-  align-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	align-content: space-evenly;
 }
 
 .skills-column {
-  width: 25%;
+	width: 25%;
 }
 
 .skills-column li {
-  font-size: 16px;
-  padding: 10px;
-  font-weight: 600;
+	font-size: 16px;
+	padding: 10px;
+	font-weight: 600;
 }
 
 @media (max-width: 1000px) {
-  .about-container {
-    margin-bottom: 30px;
-  }
+	.about-container {
+		margin: 150px 50px 0px 50px;
+	}
 
-  .inner-about-header {
-    font-size: 18px;
-  }
+	.inner-about-header {
+		font-size: 18px;
+	}
 
-  .inner-about-description {
-    font-size: 10px;
-    width: 90%;
-  }
+	.inner-about-description {
+		font-size: 10px;
+		width: 90%;
+	}
 
-  .skills-container {
-    margin-top: 10px;
-  }
+	.skills-container {
+		margin-top: 10px;
+	}
 
-  .skills-column li {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .morgan-headshot {
-    display: none;
-  }
+	.skills-column li {
+		font-size: 8px;
+	}
 }
