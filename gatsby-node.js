@@ -8,7 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(
     `
       {
-        allContentfulBlogPost {
+        allContentfulSingleBlogPost {
           edges {
             node {
               slug
